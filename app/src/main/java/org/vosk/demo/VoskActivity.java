@@ -211,7 +211,7 @@ public class VoskActivity extends Activity implements
                         "\"oh zero one two three four five six seven eight nine\", \"[unk]\"]");
 
                 InputStream ais = getAssets().open(
-                        "10001-90210-01803.wav");
+                        "trecho_livro_mono.wav");
                 if (ais.skip(44) != 44) throw new IOException("File too short");
 
                 speechStreamService = new SpeechStreamService(rec, ais, 16000);
