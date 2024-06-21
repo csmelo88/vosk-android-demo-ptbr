@@ -207,8 +207,7 @@ public class VoskActivity extends Activity implements
         } else {
             setUiState(STATE_FILE);
             try {
-                Recognizer rec = new Recognizer(model, 16000.f, "[\"one zero zero zero one\", " +
-                        "\"oh zero one two three four five six seven eight nine\", \"[unk]\"]");
+                Recognizer rec = new Recognizer(model, 16000.f);
 
                 InputStream ais = getAssets().open(
                         "trecho_livro_mono.wav");
